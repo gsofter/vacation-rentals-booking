@@ -8,9 +8,9 @@
 </p>
 
 ## About Laravel-React Booking Automation site.
-Built with laravel + reactjs.
-Integration of payment gateway, booking automation api.
-Easy searching for available rooms with location and dates.
+Built with laravel + reactjs. <br/>
+Integration of payment gateway, booking automation api. <br/>
+Easy searching for available rooms with location and dates. <br/>
 
 php version > 7.0.x
 
