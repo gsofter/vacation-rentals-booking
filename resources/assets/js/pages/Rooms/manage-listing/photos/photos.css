@@ -1,0 +1,15 @@
+.right_save,
+.right_save_continue {
+    margin-right: 3px;
+}
+
+.photo-size,
+.photo-size img {
+    object-fit: cover !important;
+}
+
+.photo-item-container.photo_drag_item.slide {
+    z-index: 100000;
+}
+
+

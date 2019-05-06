@@ -1,0 +1,709 @@
+.booked {
+    cursor: no-drop !important;
+}
+
+.booked.reservation {
+    background: #007bff !important;
+    color: white !important;
+}
+
+.booked.reservation.checkin {
+    background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #007bff 50%, #007bff 100%) !important;
+    color: black !important;
+    cursor: pointer !important
+}
+
+.booked.reservation.checkin.range_selected {
+    background: linear-gradient(to bottom right, orange 0%, orange 50%, #007bff 50%, #007bff 100%) !important;
+    color: black !important;
+    cursor: pointer !important
+}
+
+.booked.reservation.checkin.selected {
+    background: linear-gradient(to bottom right, orange 0%, orange 50%, #007bff 50%, #007bff 100%) !important;
+    color: black !important;
+    cursor: pointer !important
+}
+
+.booked.reservation.checkout {
+    background: linear-gradient(to bottom right, #007bff 0%, #007bff 50%, #fff 50%, #fff 100%) !important;
+    color: white !important;
+    cursor: pointer !important
+}
+
+.booked.reservation.checkout.range_selected {
+    background: linear-gradient(to bottom right, #007bff 0%, #007bff 50%, orange 50%, orange 100%) !important;
+    color: white !important;
+    cursor: pointer !important
+}
+
+.booked.reservation.checkout.selected {
+    background: linear-gradient(to bottom right, #007bff 0%, #007bff 50%, orange 50%, orange 100%) !important;
+    color: white !important;
+    cursor: pointer !important
+}
+
+.booked.booked.reservation.checkout.checkin {
+    background: linear-gradient(to bottom right, #007bff 0%, #007bff 45%, #fff 45%, #fff 55%, #0179FF 55%, #0179FF 100%) !important;
+    color: white !important;
+}
+
+.booked.booked.reservation.checkout.checkin.range_selected {
+    background: linear-gradient(to bottom right, #007bff 0%, #007bff 45%, orange 45%, orange 55%, #0179FF 55%, #0179FF 100%) !important;
+    color: white !important;
+}
+
+
+/* Seasonal Css */
+
+.seasonal {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 20px;
+    /* height: 20px; */
+    padding: 1px;
+    background: #054479;
+    color: white;
+    -webkit-text-stroke: 0px;
+    font-size: 9pt;
+    font-weight: lighter;
+}
+
+.seasonal.active {
+    background: #009587;
+    padding-left: 5px !important;
+    padding-top: 5px !important;
+}
+
+
+/* End Seasonal Css */
+
+
+/* Start Booked Blocked Css */
+
+.booked.blocked {
+    background: #C44B4D !important
+}
+
+.booked.blocked {
+    /* background: #C44B4D */
+}
+
+
+/* End Blocked Css */
+
+.wtb-sm .wtbbody .wtbcell:last-child,
+.wtb-sm .wtbhead:last-child {
+    border-right: none
+}
+
+.wtb-sm {
+    display: table;
+    width: 100%
+}
+
+.wtb-sm .wtbcaption {
+    border: none;
+    display: table-caption;
+    text-align: center;
+    color: #666;
+    font-size: .95rem;
+    font-weight: 600;
+    text-shadow: 0 1px 0 #fff;
+    padding: 10px;
+    border-bottom: none;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px
+}
+
+.wtb-sm .wtbrow {
+    display: table-row
+}
+
+.wtb-sm .wtbbody .wtbcell,
+.wtb-sm .wtbhead {
+    display: table-cell;
+    font-weight: 600;
+    width: 38px;
+    text-align: center
+}
+
+.wtb-sm .wtbbody .wtbcell {
+    border: none;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    color: #333;
+    height: 85px;
+    cursor: pointer;
+    padding: 0!important;
+    /* text-shadow: 1px -1px 0 rgba(255, 255, 255, .9) */
+}
+
+.wtb-sm .wtbbody .wtbcell:first-child {
+    border-left: none
+}
+
+.wtb-sm .wtbhead {
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    color: #666;
+    font-size: .8em;
+    padding: .5em 0;
+    text-shadow: 0 1px 0 #fff
+}
+
+.wtb-sm .wtbhead:first-child {
+    border-left: none
+}
+
+.wtbheading .wtbrow .wtbhead {
+    border-top-width: 1px
+}
+
+.wtb-sm .wtbheading {
+    display: table-header-group;
+    font-weight: 700;
+    width: 100%
+}
+
+.wtb-sm .wtbfoot {
+    display: table-footer-group;
+    font-weight: 700
+}
+
+.wtb-sm .wtbbody {
+    display: table-row-group
+}
+
+#yearcalendar {
+    width: 100%;
+    box-sizing: border-box
+}
+
+.yearcalendar .calendar-wrap-sm {
+    border-collapse: separate!important;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm span.month {
+    font-size: 1em;
+    font-weight: 600;
+    color: #666;
+    text-shadow: 0 1px 0 #fff
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .calrel {
+    position: relative;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    padding: 0!important;
+    overflow: hidden;
+    display: block
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .cout {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 37px 37px 0 0;
+    border-color: transparent;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 1px
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .cout .outap,
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .cout .retap {
+    height: 19px;
+    left: 0;
+    bottom: 18px;
+    width: 19px;
+    border-bottom-right-radius: 10px;
+    line-height: 18px;
+    z-index: 868;
+    position: absolute;
+    display: block;
+    text-decoration: none
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .cout .outap:before {
+    content: "\e074";
+    font-family: 'Glyphicons Halflings';
+    line-height: 18px;
+    text-decoration: none;
+    font-size: 10px
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .cout .retap:hover {
+    background-color: rgba(0, 0, 0, .1);
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -o-transition: all .35s ease;
+    transition: all .55s ease
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .cout .retap:before {
+    content: "\e074";
+    font-family: 'Glyphicons Halflings';
+    line-height: 18px;
+    text-decoration: none;
+    font-size: 8px
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .cout .retap.p:before {
+    content: ""
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .chin {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 37px 37px;
+    border-color: transparent;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    top: 1px
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .chin .intap {
+    bottom: 2px;
+    display: block;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 18px;
+    width: 19px;
+    z-index: 868;
+    border-top-left-radius: 10px;
+    line-height: 18px;
+    text-decoration: none
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .chin .intap:before {
+    content: "\e072";
+    font-family: 'Glyphicons Halflings';
+    line-height: 18px;
+    text-decoration: none;
+    font-size: 8px
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .chin .adtap {
+    bottom: 2px;
+    display: block;
+    height: 19px;
+    position: absolute;
+    right: 0;
+    top: 18px;
+    width: 19px;
+    z-index: 868;
+    border-top-left-radius: 3px;
+    line-height: 18px;
+    text-decoration: none
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .chin .adtap:hover {
+    background-color: rgba(0, 0, 0, .1);
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -o-transition: all .35s ease;
+    transition: all .55s ease
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .chin .adtap:before {
+    content: "\e072";
+    font-family: 'Glyphicons Halflings';
+    line-height: 18px;
+    text-decoration: none;
+    font-size: 8px
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .chin .adtap.p:before {
+    content: ""
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .dtnum {
+    height: 22px;
+    left: 50%;
+    line-height: 22px;
+    margin-left: -11px;
+    margin-top: -11px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    z-index: 867;
+    border-radius: 50%;
+    color: #333
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .dtnum a {
+    height: 22px;
+    line-height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #333;
+    outline: 0
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .dtnum a.jq-dropdown-open,
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .dtnum a:active,
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .dtnum a:focus,
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell .dtnum a:hover {
+    background-color: rgba(0, 0, 0, .1);
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -o-transition: all .35s ease;
+    transition: all .55s ease
+}
+
+.yearcalendar .calendar-wrap-sm .wtb-sm .wtbbody .wtbcell.today span.dtnum {
+    z-index: 867;
+    display: block;
+    position: absolute;
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    height: 24px;
+    margin-left: -11px;
+    margin-top: -12px
+}
+
+.yearcalendar .calendar-wrap-sm .small-calendar tr td.events a {
+    display: block;
+    line-height: 1.5em;
+    width: 1.5em;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, .45);
+    position: relative;
+    cursor: pointer
+}
+
+.yearcalendar .calendar-wrap-sm .small-calendar tr td.events a:hover {
+    background-color: #fff;
+    color: #C44B4D;
+    text-decoration: none
+}
+
+.yearcalendar .cals-center {
+    text-align: center
+}
+
+.yearcalendar .cals-container {
+    clear: left;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: -6px
+}
+
+.yearcalendar .month-container {
+    background-color: #fff;
+    display: inline-block;
+    float: left;
+    margin: 6px;
+    min-height: 300px;
+    border-radius: 4px;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box
+}
+
+.yearcalendar .calnav .calnav-controlwrap {
+    display: inline-block
+}
+
+.monthly .yearcalendar .calnav .calnav-controlwrap {
+    margin-bottom: 5px!important
+}
+
+.calnav a.changeyear.next,
+.calnav a.changeyear.prev,
+.changemonthyear.next,
+.changemonthyear.prev,
+.changeyearview.next,
+.changeyearview.prev {
+    display: inline-block;
+    font-size: 20px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0;
+    color: #666;
+    vertical-align: middle
+}
+
+.calnav a.changeyear.next:hover,
+.calnav a.changeyear.prev:hover,
+.changemonthyear.next:hover,
+.changemonthyear.prev:hover,
+.changeyearview.next:hover,
+.changeyearview.prev:hover {
+    color: #007bff!important
+}
+
+.yearcalendar .calnav .calnav-controlwrap select {
+    font-weight: 600
+}
+
+.yearcalendar .calnav span.year {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    height: 28px;
+    line-height: 27px;
+    margin: 0 5px;
+    text-align: center;
+    vertical-align: middle;
+    color: #666
+}
+
+.yearcalendar .calnav a:hover {
+    color: inherit
+}
+
+.yearcalendar .calnav a i.icon {
+    margin: 0;
+    text-align: center
+}
+
+#popbkiavanae {
+    text-align: center;
+    font-weight: 600;
+    min-height: 17px;
+    min-width: 180px
+}
+
+.colorinlist .calrel,
+.yearcalendar .yearlist .calrel {
+    position: relative;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    padding: 0!important;
+    overflow: hidden;
+    display: block
+}
+
+.colorinlist .calrel .cout,
+.yearcalendar .yearlist .calrel .cout {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 0;
+    border-color: transparent;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 1px
+}
+
+.colorinlist .calrel .chin,
+.yearcalendar .yearlist .calrel .chin {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 25px 25px;
+    border-color: transparent;
+    line-height: 0;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.yearcalendar .month-container.lightbg .wtb-sm .wtbbody .wtbcell:last-child,
+.yearcalendar .month-container.lightbg .wtb-sm .wtbhead:last-child {
+    border-right: none
+}
+
+.yearcalendar .yearlist .calrel .dtnum {
+    border-radius: 50%;
+    color: #333;
+    height: 22px;
+    left: 50%;
+    line-height: 22px;
+    margin-left: -11px;
+    margin-top: -11px;
+    position: absolute;
+    top: 50%;
+    width: 22px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, .9);
+    z-index: 867;
+    font-weight: 600;
+    text-align: center
+}
+
+.yearcalendar .month-container.lightbg .wtb-sm .wtbbody .wtbcell {
+    border: none;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8
+}
+
+.yearcalendar .month-container.lightbg .wtb-sm .wtbbody .wtbcell:first-child {
+    border-left: none
+}
+
+.yearcalendar .month-container.lightbg .wtb-sm .wtbhead {
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8
+}
+
+.yearcalendar .month-container.lightbg .wtb-sm .wtbhead:first-child {
+    border-left: none
+}
+
+.yearcalendar .month-container.lightbg .wtb-sm .wtbheading .wtbrow .wtbhead {
+    border-top-width: 1px
+}
+
+.yearcalendar .month-container.lightbg .wtb-sm .wtbcaption {
+    border-color: #ebebeb #ebebeb currentcolor
+}
+
+.calheading.yearly h1 {
+    margin-left: -15px;
+    margin-right: -15px
+}
+
+.calheading.monthly h1 {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+
+.monthly h4 {
+    color: #666;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.wtbcaption .moncalnum,
+.yearcalendar .card-header .moncalnum {
+    display: inline-block;
+    width: 38px;
+    border-radius: 30em;
+    font-size: 24px
+}
+
+.monthly .yearcalendar {
+    padding-bottom: 30px
+}
+
+.calheading.monthly {
+    position: relative;
+    margin-left: -10px
+}
+
+.wtbcaption .moncalnum {
+    height: 38px;
+    line-height: 38px;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.yearcalendar .card-header .moncalnum {
+    line-height: 30px;
+    margin-right: -8px;
+    margin-top: -6px
+}
+
+.blocklist .yearcalendar .card .card-body,
+.blocklist .yearcalendar .card .card-header {
+    padding: .5rem .7rem
+}
+
+a.printbutton {
+    display: none
+}
+
+a.exportmodebutton,
+a.printmodebutton {
+    display: block;
+    font-size: 1.2rem;
+    color: #5a6268
+}
+
+h1 a.printmodebutton {
+    margin-right: 15px;
+    line-height: 1.7
+}
+
+a.exportmodebutton:hover,
+a.printmodebutton:hover {
+    color: #007bff!important
+}
+
+@media screen and (max-width:595px) {
+    .cals-container {
+        width: 283px
+    }
+    a.printmodebutton {
+        margin-right: 25px
+    }
+}
+
+@media screen and (min-width:596px) and (max-width:991px) {
+    .cals-container {
+        width: 585px
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .cals-container {
+        width: 880px
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .cals-container {
+        width: 1144px
+    }
+}
+
+@media screen and (max-width:767px) {
+    .yearcalendar .calnav .calnav-controlwrap {
+        margin-bottom: 5px;
+        width: 100%
+    }
+    .monthly .yearcalendar .calnav .calnav-controlwrap {
+        margin-bottom: 5px!important
+    }
+    .calheading {
+        padding-left: 15px
+    }
+    .calheading.monthly h1 {
+        font-size: 20px
+    }
+}
+
+.wtbcell.caldt {
+    vertical-align: top
+}
+
+.wtbcell.caldt.selected {
+    background: blue;
+    color: white
+}
+
+.wtbcell.caldt.range_selected {
+    background: orange;
+    color: white
+}
+
+.wtbcell.caldt.disabled {
+    color: gray;
+    opacity: 0.5;
+}
+
+.wtbcell {
+    position: relative;
+}

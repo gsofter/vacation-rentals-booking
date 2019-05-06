@@ -1,0 +1,386 @@
+/*
+Library Name: CI Chatsocket
+Description: “CI Chatsocket” a CodeIgniter Chat application that uses Node JS and socket.io
+			 to communicate real-time to each user.
+			 This library can be used in any existing CodeIgniter website or web application.
+
+Author: Jay-r Simpron
+*/
+
+
+/******* General styles ******/
+
+.cs-list-users.offline:after{
+	background-color: #ccc;
+}
+.cs-list-users.online:after{
+	background-color: #00ff27;
+}
+.cs-list-users:after{
+    position: absolute;
+    content: " ";
+    left: 2px;
+    top: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+
+}
+
+/* disable social share of the prettyphoto */
+.pp_social{
+	display: none;
+}
+
+/* hide audio player for notification */
+.cs-audio{
+	display: none;
+}
+
+/******* End General styles ******/
+
+
+
+/******* Start main messages styles ******/
+#message-inner div.message-row img{
+	margin: 3px;
+}
+
+#message-inner{
+	overflow-y: auto;
+	overflow-x:hidden;
+	max-height: 100%;
+	padding-right: 12px;
+	position: relative;
+	background-color: #EDEDED;
+}
+
+
+#message-container{
+	height: 100%;
+	position: relative;
+	padding-bottom: 75px;
+}
+
+
+.message-row{
+	position: relative;
+	height: auto;
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.message-row div.attachment ul{
+	list-style: none;
+}
+
+.msg-input{
+	bottom: 0;
+}
+.message-row{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding:10px 0 0;
+	margin:2px 0 2px;
+}
+
+.message-in{
+	background-color: #FFE6CB;
+}
+.message-out{
+	background-color: #C7EAFC;
+
+}
+.message_header{
+	display: inline-block;
+	width: 100%;
+}
+.profile-pic{
+	position: absolute;
+}
+
+.message-in .profile-pic{
+	right: 2px;
+}
+.message-out .message-box{
+	padding-left: 35px;
+}
+.message-in .message-box{
+	padding-right: 35px;
+}
+
+
+.delete-message{
+	visibility: hidden;
+	opacity: 0;
+  	transition: visibility 0s, opacity 0.5s linear;
+}
+
+.message-row:hover .delete-message{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+.bootbox.width-90 .modal-dialog{
+	width: 98%;
+}
+
+#video-stream-container{
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	border: solid 1px #000000;
+    background: #000;
+    min-width: 50%;
+    min-height: 40%;
+    height: 300px;
+    top:50px;
+    left: 50px;
+}
+
+
+#video-stream-container .panel{
+	padding-bottom: 90px;
+}
+#video-stream-container .panel,
+#video-stream-container .panel .panel-body{
+	height: 100%;
+	background: #000;
+}
+
+#video-stream-container .panel .panel-heading{
+	cursor: move;
+}
+
+.emojionearea .emojionearea-editor{
+	min-height: 1em !important; /* override the default emojionearea minimum height*/
+	padding-right: 45px !important; /* override the default emojionearea minimum height*/
+}
+
+.message_row_container a{
+	color:#49A9EA;
+}
+
+.message_row_container a:hover{
+	color:#EC594D;
+}
+
+/******* End main messages styles ******/
+
+
+
+/****** Start chatbox tray styles ******/
+#xwb-bottom-chat-container { 
+	position: fixed;
+	bottom:0;
+	right:0;
+	z-index: 1000;
+	height: 20px;
+	width: auto;
+}
+
+.xwb-chat {
+	border: 1px solid #999;
+	float: right;
+	position: relative;
+	margin: 0 5px;
+	bottom: 300px;
+	width: 250px;
+	height: 320px;
+	background-color: #EDEDED;
+}
+
+.xwb-chat.chatbox-tray{
+	bottom: 30px;
+}
+.xwb-chat .title { 
+    min-height: 50px;
+    padding-right: 10px;
+    background-color: #2A3F54;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    cursor: pointer;
+
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.xwb-chat .title h5{
+	height: 50px;
+    margin: 0;
+    line-height: 50px;
+    position: relative;
+    padding-left: 20px;
+
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    float: left;
+    width: 190px;
+}
+
+.xwb-chat .title h5 a{
+	color: #fff;
+    max-width: 195px;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.xwb-chat .title button{
+	float: right;
+}
+
+.xwb-chat.offline .title h5.conversation-title:before{
+	background: #ccc;
+}
+
+.xwb-chat.online .title h5.conversation-title:before{
+	background: #4CAF50;
+}
+.xwb-chat .title h5.conversation-title:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.xwb-chat .chatbox-title-tray,
+.xwb-chat .chatbox-title-close {
+    width: 24px;
+    height: 24px;
+    outline: 0;
+    border: none;
+    background-color: transparent;
+    opacity: 0.5;
+    cursor: pointer;
+
+    -webkit-transition: opacity 200ms;
+    transition: opacity 200ms;
+}
+
+.xwb-chat .chatbox-title-tray:hover,
+.xwb-chat .chatbox-title-close:hover {
+    opacity: 1;
+}
+
+.xwb-chat .chatbox-title-tray span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-bottom: 2px solid #fff
+}
+
+.xwb-chat .chatbox-title-close svg {
+    vertical-align: middle;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.2px;
+}
+
+
+.xwb-chat .conversation-container { 
+	background-color: #EDEDED;
+	max-height: 230px;
+	overflow-y: auto;
+	width: 100%;
+}
+
+.message_row_container img.emojione{
+	height: 15px;
+	width: 15px;
+	background-image: none;
+}
+
+.xwb-contact-container{
+	height: 370px;
+	overflow-y: auto;
+}
+
+.xwb-chat.xwb-contact-sidebar{
+	bottom: 400px;
+	background-color: #C7EAFC;
+	height: 420px;
+}
+.xwb-chat.xwb-contact-sidebar.chatbox-tray{
+	bottom: 30px;
+}
+
+
+ul li.cs-list-users a{
+	display: block;
+}
+
+.xwb-display-name{
+	max-width: 125px;
+	display: inline-block;
+}
+
+.cs-list-users a{
+	text-decoration: none;
+}
+
+.xwb-chat .chatbox{
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.cb-conversation-container div.no_messages h3.no-more-messages{
+	font-size: 15px;
+}
+
+.row.no_messages{
+	width: 100%;
+}
+
+.emojionearea .emojionearea-button.xwb-attach-btn{
+	right: 23px;
+	top:5px;
+}
+
+.emojionearea .emojionearea-button.xwb-attach-btn i{
+	padding-left: 5px;
+}
+
+.attachment ul li.audio-mpeg audio{
+	width: 150px;
+}
+
+div.xwb-table-users-container{
+	max-height: 200px;
+}
+
+#cs-ul-users {
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+
+.xwb-tray-contact-conversation {
+    .xwb-create-group-chat{
+        position: absolute;
+        bottom: -7px;
+        right: 16px;
+    
+    }
+    .tab-pane.active{
+        padding-top: 0px;
+    }
+}
+
+/******* End chatbox styles ******/

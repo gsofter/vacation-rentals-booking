@@ -1,0 +1,58 @@
+.head-title {
+    background: $blue;
+    color: $white;
+    padding: 10px 15px;
+
+    .head-wrap {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        .breadcrumb{
+            margin: 0;
+            background: $transparent;
+            padding: 0;
+            color: $white;
+            .breadcrumb-item{
+                a{
+                    color: $white;
+                }
+            }
+            .active{
+                color: $white;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .head-inbox {
+        position: $rel;
+        z-index: 99;
+        a {
+            @include transition(300ms all);
+            border-width: 1px;;
+            @include border-radius(4px);
+            
+
+            &:hover {
+                color: $white;
+                background-color: $transparent;
+                background-image: none;
+                border-color: $white;
+                opacity: 0.8;
+            }
+
+            i {
+                vertical-align: middle;
+                margin-left: 5px;
+            }
+        }
+
+    }
+}

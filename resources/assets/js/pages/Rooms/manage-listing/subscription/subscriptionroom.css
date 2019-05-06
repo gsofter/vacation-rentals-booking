@@ -1,0 +1,12 @@
+.listing_detail {
+    color: white;
+    font-size: 1em;
+}
+
+.listing_item {
+    border-bottom: solid 1px white
+}
+
+.redirect_to_listing {
+    color: white;
+}

@@ -1,0 +1,13 @@
+.carousel-item{
+  height: 100%;
+}
+.carousel-item > img{
+  object-fit: cover;
+  height: inherit;
+}
+.carousel-inner{
+  height: 100%;
+}
+.carousel{
+  height: 100%;
+}

@@ -1,0 +1,37 @@
+/*colors*/
+$dark:#0c131c;
+$blue:#23537a;
+$gray:#8b8e8d;
+$white:#fff;
+$body-color: #f4f4f4;
+$web-font: 'Nunito';
+$footer-font-color:rgba(255, 255, 255, 0.4);
+$-primary-box-shodaw:0 5px 30px rgba(0, 0, 0, 0.2);
+$-secondary-box-shodaw:0 5px 100px rgba(204, 204, 204, 0.3);
+
+$bg-overlay:rgba(10, 31, 65, 0.05);
+
+$res-pd: 15px;
+
+$transparent:transparent;
+
+$-primary-bor-co:#e6e6e6;
+
+// position
+$rel: relative;
+$ab: absolute;
+
+// font weight
+$fw-100: 100;
+$fw-300: 300;
+$fw-500: 500;
+$fw-600: 600;
+$fw-bold: bold;
+
+
+/*Media Query*/
+$break-1299: 1299px;
+$break-992: 992px;
+$break-991: 991px;
+$break-767: 767px;
+$break-mobile-small: 680px;

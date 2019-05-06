@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,300);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+#bonfaq .panel {
+    box-shadow: 0 1px 5px rgba(85, 85, 85, 0.15);
+    padding-bottom: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 0 0 16px
+}
+
+#bonfaq .panel a[href^="#"],
+#bonfaq .panel a[href^="#"]:hover,
+#bonfaq .panel a[href^="#"]:focus {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none
+}
+
+#bonfaq .panel .panel-heading {
+    background-color: #f6f6f6;
+    padding: 0 16px;
+    line-height: 48px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    color: rgba(0, 0, 0, 0.87)
+}
+
+#bonfaq .panel .panel-heading h2 {
+    margin: 0;
+    padding: 14px 0 14px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: normal;
+    position: relative
+}
+
+#bonfaq .panel .panel-heading h2:after {
+    position: absolute;
+    right: 2px;
+    top: 12px;
+    content: "-";
+    font-size: 31px
+}
+
+#bonfaq .panel .panel-heading:hover {
+    cursor: pointer
+}
+
+#bonfaq .panel .panel-heading.collapsed h2:after {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    content: "+";
+    font-size: 27px
+}
+
+#bonfaq .panel .panel-body {
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    margin-top: 0
+}
+
+#bonfaq .panel .panel-body p {
+    margin: 0 0 16px
+}
+
+#bonfaq .panel .panel-body p:last-of-type {
+    margin: 0
+}
+
+.block {
+    margin-bottom: 30px
+}
+
+@media (max-width:767px) {
+    .block {
+        margin-bottom: 0
+    }
+}
+
+@media (max-width:767px) {
+    .block .block_content {
+        margin-bottom: 20px
+    }
+}
+
+.block .title_block,
+.block h4 {
+    font: 600 18px/22px "Open Sans", sans-serif;
+    color: #555454;
+    background: #f6f6f6;
+    border-top: 5px solid #333;
+    text-transform: uppercase;
+    padding: 14px 5px 17px 20px;
+    margin-bottom: 20px
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .block .title_block,
+    .block h4 {
+        font-size: 14px
+    }
+}
+
+@media (max-width:767px) {
+    .block .title_block,
+    .block h4 {
+        position: relative
+    }
+    .block .title_block:after,
+    .block h4:after {
+        display: block;
+        font-family: "FontAwesome";
+        /* content: "ï§"; */
+        position: absolute;
+        right: 0;
+        top: 15px;
+        height: 36px;
+        width: 36px;
+        font-size: 26px;
+        font-weight: normal
+    }
+    .block .title_block.active:after,
+    .block h4.active:after {
+        content: "ï¨"
+    }
+}
+
+.block .title_block a,
+.block h4 a {
+    color: #555454
+}
+
+.block .title_block a:hover,
+.block h4 a:hover {
+    color: #333
+}
+
+.block .list-block {
+    margin-top: -8px
+}
+
+@media (max-width:767px) {
+    .block .list-block {
+        margin-top: 0
+    }
+}
+
+.block .list-block li {
+    padding: 5px 0 6px 20px;
+    border-top: 1px solid #d6d4d4
+}
+
+.block .list-block li a i {
+    display: none
+}
+
+.block .list-block li a:before {
+    content: "\f105";
+    display: inline;
+    font-family: "FontAwesome";
+    color: #333;
+    padding-right: 8px
+}
+
+.block .list-block li a.selected_subcategory:before {
+    content: "\f101";
+    display: inline;
+    font-family: "FontAwesome";
+    color: #333;
+    padding-right: 8px
+}
+
+.block .list-block li a:hover {
+    color: #333;
+    font-weight: bold
+}
+
+.block .list-block li:first-child {
+    border-top: none
+}
+
+.block .list-block .form-group {
+    padding-top: 20px;
+    border-top: 1px solid #d6d4d4;
+    margin-bottom: 0
+}
+
+.block .list-block .form-group select {
+    max-width: 270px
+}
+
+@media (max-width:767px) {
+    .block .list-block .form-group select {
+        width: 270px
+    }
+}
+
+.block .list-block .btn {
+    margin-top: 12px
+}
+
+.block .products-block li {
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d6d4d4
+}
+
+.block .products-block li .products-block-image {
+    float: left;
+    border: 1px solid #d6d4d4;
+    margin-right: 19px
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .block .products-block li .products-block-image {
+        float: none;
+        display: inline-block;
+        margin: 0 auto 10px;
+        text-align: center
+    }
+}
+
+.block .products-block li .product-content {
+    overflow: hidden
+}
+
+.block .products-block li .product-content h5 {
+    position: relative;
+    top: -11px
+}
+
+.block .products-block .product-name {
+    font-size: 15px;
+    line-height: 18px
+}
+
+.block .products-block .product-description {
+    margin-bottom: 14px
+}
+
+.block .products-block .price-percent-reduction {
+    font: 700 14px/17px Arial, Helvetica, sans-serif;
+    padding: 1px 6px
+}
+
+#categories_block_top {
+    clear: both;
+    position: relative;
+    top: 30px
+}
+
+#categories_block_top .sf-menu {
+    position: relative
+}
+
+#categories_block_top .sf-menu>li {
+    position: static
+}
+
+#categories_block_top .sf-menu>li>ul {
+    width: 100%;
+    top: 60px;
+    margin: 0 20px
+}
+
+#categories_block_top .sf-menu>li>ul>li {
+    display: block;
+    float: left;
+    width: 20%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 10px
+}
+
+#categories_block_top .sf-menu>li>ul>.category_thumb {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    width: 100%
+}
+
+#categories_block_top .sf-menu>li>ul>.category_thumb img {
+    display: inline-block;
+    width: 33%
+}
+
+#categories_block_top .sf-menu>li h4 a {
+    font-size: 1.1em
+}
+
+#categories_block_top .sf-menu>li h4 a:before {
+    display: none
+}
+
+#categories_block_top .sf-menu>li .main-level-submenus {
+    position: relative;
+    display: block !important;
+    visibility: visible !important;
+    top: 0;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    left: 0
+}
+
+#categories_block_top .sf-menu .category_thumb {
+    display: none
+}
+
+#categories_block_left .block_content>ul {
+    border-top: 1px solid #d6d4d4
+}
+
+#categories_block_left li {
+    position: relative
+}
+
+#categories_block_left li a {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0 30px 0 19px;
+    border-bottom: 1px solid #d6d4d4
+}
+
+#categories_block_left li span.grower {
+    display: block;
+    background: #f6f6f6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    font-family: "FontAwesome";
+    font-size: 14px
+}
+
+#categories_block_left li span.grower.OPEN:before,
+#categories_block_left li span.grower.CLOSE:before {
+    content: "\f068";
+    display: block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    color: #333;
+    line-height: 30px;
+    text-align: center
+}
+
+#categories_block_left li span.grower.CLOSE:before {
+    content: "\f067";
+    color: silver
+}
+
+#categories_block_left li span.grower:hover+a,
+#categories_block_left li a:hover,
+#categories_block_left li a.selected {
+    background: #f6f6f6
+}
+
+#categories_block_left li li a {
+    font-weight: normal;
+    color: #777777
+}
+
+#categories_block_left li li a:before {
+    content: "\f105";
+    font-family: "FontAwesome";
+    line-height: 29px;
+    padding-right: 8px
+}
+
+#help_banner {
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+#help_banner>.page-container-full {
+    height: 100%;
+}
+
+#help_banner .hero__content-footer {
+    bottom: 0px;
+}
+
+#help_banner .input-contrast {
+    border-width: 0 0 0 0 !important;
+    background: transparent;
+    width: 400px;
+}
+
+.query_search_panel {
+    position: absolute;
+    font-size: 1.5em;
+    background: white;
+    top: 51px;
+    left: 19px;
+    width: 100%;
+    font-size: 1.5em;
+}
+
+.query_search_item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    padding-left: 13px;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+#help-searchbar-form {
+    height: 50px;
+}
+
+#help-searchbar-form .input-contrast {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 100%;
+    padding-left: 18px;
+}
+
+#help-searchbar-form button#submit_location {
+    margin: 0% !important
+}
+
+#help_banner #searchbar {
+    margin-bottom: 25px;
+}

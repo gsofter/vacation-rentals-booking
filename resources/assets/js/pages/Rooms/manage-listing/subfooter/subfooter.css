@@ -1,0 +1,6 @@
+.manage-listing-footer{
+bottom: 0;
+position: fixed;
+background: #00293d;
+z-index: 30;
+}

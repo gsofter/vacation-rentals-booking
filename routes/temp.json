@@ -1,0 +1,22 @@
+var dataString = '^{
+"season_name": "1212121212",
+"edit_season_name": "" ^
+} & ^ {
+    "season_name": "121212121211111",
+    "edit_season_name": "" ^
+} & ^ {
+    "data": ^ {
+        "room_id": 11474,
+        "edit_seasonal_name": "",
+        "additional_guest": "800",
+        "week": "800",
+        "month": "800",
+        "weekend": "800",
+        "seasonal_name": "121212121211111",
+        "price": "800",
+        "minimum_stay": "800",
+        "start_date": "2019-01-24",
+        "end_date": "25-01-2019" ^
+    } ^
+}
+';

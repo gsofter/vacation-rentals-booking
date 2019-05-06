@@ -1,0 +1,111 @@
+.kl-bg-source__bgimage{
+    background-image:url('./img/vacation_2.jpg');
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-position-x:center;
+    background-position-y:75%;
+    background-size:cover;
+}
+.kl-bg-source__overlay{
+    background-color:rgba(0,0,0,0.25);
+}
+@media (min-width: 768px){
+    .col-md-12 {
+        width: 100%;
+        float: left;
+    }
+}
+.col-sm-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+@media (min-width: 992px){
+    .align-items-lg-center {
+        -webkit-box-align: center!important;
+        -ms-flex-align: center!important;
+        align-items: center!important;
+    }
+}
+.justify-content-center {
+    -webkit-box-pack: center!important;
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.media-container {
+    position: relative;
+}
+.hsize-400 {
+    height: 400px;
+}
+.kl-bg-source:not(:empty), .kl-bg-source__bgimage, .kl-bg-source__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.kl-bg-source:not(:empty), .kl-bg-source__bgimage, .kl-bg-source__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.white {
+    color: #fff!important;
+}
+
+.shadow-text {
+    text-shadow: 1px 2px 2px rgba(0,0,0,.7);
+}
+.fw-bold {
+    font-weight: 700;
+}
+.tcolor-ext {
+    color: #0190e2!important;
+}
+.fs-22, .fs-24 {
+    font-size: 22px;
+}
+.fs-18 {
+    font-size: 18px;
+}
+.row:after, .row:before {
+    content: " ";
+    display: table;
+}
+.row:after {
+    clear: both;
+}
+.row:after, .row:before {
+    content: " ";
+    display: table;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.how_it_works {
+    padding: 40px 0 50px;
+}
+.pb-70 {
+    padding-bottom: 70px!important;
+}
+.pt-70 {
+    padding-top: 70px!important;
+}
+section {
+    margin: 0 0 45px;
+    position: relative;
+}
+.kl-bottommask--mask3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 57px;
+}
+.kl-bottommask {
+    z-index: 1;
+}

@@ -1,0 +1,164 @@
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.contact_inner{
+    .contact-map{
+        iframe{
+            min-height: 400px;
+        }     
+    }
+    .con-mid{
+        margin-top: -200px;
+        @media(max-width:$break-767){
+            margin-top: 10px;
+            padding: 0 15px;
+        }
+        h4{
+            margin-bottom: 30px;
+            font-weight: 700;
+            font-size: 28px;
+            @media(max-width:$break-1199){
+                font-size: 22px;
+            }
+        }
+
+        .col-md-8{
+            color: $dark;
+            padding: 60px;
+            background: $white;
+            border-radius: 10px 0 0 10px;
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+            @media(max-width:$break-1199){
+                padding: 30px;
+            }
+            @media(max-width:$break-767){
+                border-radius: 10px;
+            }
+        
+        }
+        .col-md-4{
+            background: $blue;
+            padding: 60px;
+            color: $white;
+            border-radius:0 10px 10px 0; 
+            position: relative;
+            box-shadow: 0 0 24px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            @media(max-width:$break-1199){
+                padding: 30px;
+            }
+            @media(max-width:$break-767){
+                margin: 15px 0;
+                border-radius:10px; 
+            }
+        }
+        
+        .con-list{
+            margin-bottom: 20px;
+            .rel-in {
+                position: relative;
+                button{
+                    position: absolute;
+                    bottom: -20px;
+                    right: -20px;
+                    border-radius: 50px;
+                    border: 0;
+                    padding: 15px;
+                    width: 60px;
+                    height: 60px;
+                    background: $blue;
+                    color: #fff;
+                    font-size: 22px;
+                    box-shadow: 0 0 10px #1f4767b3;
+                    cursor: pointer;
+                }
+            }
+            label{
+                width: 100%;
+                color: $dark;
+                font-size: 13px;
+                padding-bottom: 0;
+                font-weight: 600;
+            }
+            input, select, textarea{
+                width: 100%;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+                font-size: 14px;
+                background: transparent;
+                padding: 10px;
+                border: 1px solid #e4e4e4;
+                color: #000000;
+                border-radius: 5px;
+
+
+
+            }
+            textarea{
+                min-height: 100px;
+            }
+        }
+        .con-r{
+            .con-wrapper{
+                .cont-list-parent{
+                    li{
+                        position: relative;
+                        margin-bottom: 30px;
+                        i{
+                            position: absolute;
+                            text-align: left;
+                            width: 20px;
+                            font-size: 18px;
+                            top: 4px;
+                        }
+                        span{
+                            padding-left: 35px;
+                            line-height: 27px;
+                            display: block;
+                            font-size: 15px;
+                            a{
+                                color: $white;
+                            }
+                        }
+                    }
+
+                }
+                .social-links{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                    background: #1f4767;
+                    padding: 15px;
+                    @media(max-width:$break-767){
+                        position: static;
+                        border-radius: 10px;
+                    }
+                    li{
+                        display: inline-block;
+                        margin: 0 7px;
+                        a {
+                            color: #fff;
+                            font-size: 22px;
+                            @media(max-width:$break-767){
+                                font-size: 15px;
+                            }
+                        }
+                        &:first-child{
+                            margin-left: 0;
+                        }
+                    }
+                }
+                
+            }  
+        }
+    }
+}
+body{
+    overflow-x: hidden;
+}
+@media(max-width:$break-767){
+    .contact-page{
+        margin-top: 0 !important;
+    }
+}

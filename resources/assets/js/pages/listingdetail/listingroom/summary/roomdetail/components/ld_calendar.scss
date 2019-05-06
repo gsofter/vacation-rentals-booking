@@ -1,0 +1,27 @@
+.ld_calendar{
+    
+    td.disabled {
+        color: gray;
+        opacity: 0.4;
+    }
+    
+.booked.reservation {
+    background: #007bff !important;
+    color: white !important;
+}
+
+.booked.reservation.checkin {
+    background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #007bff 50%, #007bff 100%) !important;
+    color: black !important;
+    cursor: pointer !important
+}
+.booked.reservation.checkout {
+    background: linear-gradient(to bottom right, #007bff 0%, #007bff 50%, #fff 50%, #fff 100%) !important;
+    color: white !important;
+    cursor: pointer !important
+}
+
+.booked.blocked {
+    background: #C44B4D !important
+}
+}

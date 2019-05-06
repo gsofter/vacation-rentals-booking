@@ -1,0 +1,41 @@
+/*transition mixin*/
+@mixin transition($transition) {
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	-webkit-transition: $transition;
+		transition: $transition;
+}
+
+/*transform mixin*/
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+		transform: $transforms;
+}
+
+/*border radius mixin*/
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+		border-radius: $radius;
+}
+
+/*Box shadow mixin*/
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+		box-shadow: $shadow;
+}
+
+/*Text shadow mixin*/
+@mixin text-shadow($text_shadow) {
+	-webkit-text-shadow: $text_shadow;
+	-moz-text-shadow: $text_shadow;
+	-ms-text-shadow: $text_shadow;
+		text-shadow: $text_shadow;
+}
+

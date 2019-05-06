@@ -1,0 +1,43 @@
+.mapmarkerCluster {
+    color: white;
+    font-size: 14pt;
+    background: rebeccapurple;
+    padding: 3px;
+    width: 45px;
+    height: 35px;
+    border-radius: 30px;
+    border: white solid 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mapMarker {
+    cursor: pointer;
+}
+
+.home_marker_image.marker_active {
+    z-index: 1000;
+    /* transform: scale(1.3); */
+    top: -36px;
+}
+
+.home_marker_image {
+    position: absolute;
+    left: -15px;
+    top: -30px;
+}
+
+.mapRoomId {
+    width: 56px;
+    background: white;
+    position: absolute;
+    /* width: 50px; */
+    text-align: center;
+    font-size: 12pt;
+    /* padding: 10px; */
+    left: -28px;
+    top: -2px;
+    z-index: 10000;
+    border: solid 2px red;
+    padding: 4px 0px;
+}

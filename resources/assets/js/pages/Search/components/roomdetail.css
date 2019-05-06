@@ -1,0 +1,31 @@
+.room_detail_map {
+    width: 200px;
+    border: solid 2px white;
+    /* position: static; */
+    /* left: 50%; */
+    position: absolute;
+    left: -100px;
+    z-index: 100;
+    background: white;
+}
+
+.room_detail_title_map {
+    color: white;
+    margin: 0px;
+    background: white;
+    padding: 10px;
+    color: red;
+}
+
+.room_detail_description_map {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.room_detail_description_map,
+.room_detail_description_map p {
+    margin: 0px;
+    background: white;
+}

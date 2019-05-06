@@ -1,0 +1,59 @@
+header.masthead {
+    position: relative;
+    background-color: #343a40;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+@media(min-width: 768px) {
+    .masthead {
+        height: 700px;
+    }
+}
+
+.va-banner {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.va-banner-t {
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 2px 3px 5px #000;
+    font-family: CenturyGothic-Regular;
+}
+
+@media (max-width: 800px) {
+    .va-banner-t {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .va-banner-t {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .va-banner-t {
+        font-size: 3vw;
+    }
+}
+
+.btn-large {
+    padding: 2px 27px !important;
+    font-size: 16px;
+}
+
+.rjbanercont {
+    position: absolute;
+    width: 100%;
+    top: 60%;
+}
+
+#home_slider {
+    height: 100%;
+}

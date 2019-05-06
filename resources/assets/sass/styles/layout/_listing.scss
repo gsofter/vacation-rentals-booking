@@ -1,0 +1,51 @@
+.your-listing_{
+    .listing-all{
+        @media(max-width:$break-767){
+            text-align: center;
+        }
+        li{
+            border-bottom: 1px solid $-primary-bor-co;
+            padding-bottom: 15px;
+            margin-bottom: 15px;  
+        }
+        .media-cover{
+            border: 1px solid $-primary-bor-co;
+            box-shadow: $-primary-box-shodaw;
+            border-radius: 7px;
+            overflow: hidden;
+            position: unset;
+        }
+        .list-ink {
+            font-size: 20px;
+            font-weight: 700;
+            @media(max-width:$break-767){
+                padding-top: 10px;
+                display: block;
+            }
+        }
+        .actions {
+            a{
+                font-size: 15px;
+                color: $gray;
+            }
+        }
+        .listing-criteria-header{
+            .field-wrapper{
+                margin: 0;
+            }
+            .list-noti {
+                font-size: 13px;
+                margin-top: 5px;
+                display: inline-block;
+                color:$gray;
+                @media(max-width:$break-767){
+                    display: block;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    
+
+    
+}

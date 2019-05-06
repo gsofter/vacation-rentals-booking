@@ -1,0 +1,7 @@
+.slick-slide img {
+    display: block;
+    width: 100%;
+}
+.listing.list_view {
+    padding: 10px;
+}

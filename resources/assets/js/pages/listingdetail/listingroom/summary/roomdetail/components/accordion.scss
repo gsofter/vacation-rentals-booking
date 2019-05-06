@@ -1,0 +1,13 @@
+.amenities_info.active{
+    padding-top: 10px;
+    padding-left: 30px;
+    max-height: 100%;
+}
+.amenities_info.inactive{
+    padding-left: 30px;
+}
+
+.amenities_info{
+    transition: max-height 0.1s ease;
+    overflow: hidden !important;
+}
